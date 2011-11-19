@@ -1,0 +1,41 @@
+{
+   "abstract" : "If something dies in a chain, stop the chain",
+   "author" : [
+      "Arthur Axel \"fREW\" Schmidt <frioux+cpan@gmail.com>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.300003, CPAN::Meta::Converter version 2.112621",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Catalyst-ActionRole-DetachOnDie",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.30"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Catalyst" : "5.90006",
+            "Catalyst::Controller::ActionRole" : "0.15",
+            "Test::More" : "0.98",
+            "Try::Tiny" : "0.11"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/frioux/Catalyst-ActionRole-DetachOnDie.git",
+         "web" : "http://github.com/frioux/Catalyst-ActionRole-DetachOnDie"
+      }
+   },
+   "version" : "0.001000"
+}
+
