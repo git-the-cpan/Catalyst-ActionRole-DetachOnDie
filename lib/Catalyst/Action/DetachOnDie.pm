@@ -1,6 +1,6 @@
 package Catalyst::Action::DetachOnDie;
 {
-  $Catalyst::Action::DetachOnDie::VERSION = '0.001000';
+  $Catalyst::Action::DetachOnDie::VERSION = '0.001001';
 }
 
 use Moose;
@@ -24,7 +24,7 @@ Catalyst::Action::DetachOnDie - If something dies in a chain, stop the chain
 
 =head1 VERSION
 
-version 0.001000
+version 0.001001
 
 =head1 SYNOPSIS
 
@@ -51,7 +51,7 @@ Arthur Axel "fREW" Schmidt <frioux+cpan@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Arthur Axel "fREW" Schmidt.
+This software is copyright (c) 2012 by Arthur Axel "fREW" Schmidt.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

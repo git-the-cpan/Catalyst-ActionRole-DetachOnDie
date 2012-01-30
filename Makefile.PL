@@ -21,11 +21,12 @@ my %WriteMakefileArgs = (
   "NAME" => "Catalyst::ActionRole::DetachOnDie",
   "PREREQ_PM" => {
     "Catalyst" => "5.90006",
+    "Catalyst::Action::RenderView" => "0.16",
     "Catalyst::Controller::ActionRole" => "0.15",
     "Test::More" => "0.98",
     "Try::Tiny" => "0.11"
   },
-  "VERSION" => "0.001000",
+  "VERSION" => "0.001001",
   "test" => {
     "TESTS" => "t/*.t"
   }

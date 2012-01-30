@@ -4,7 +4,7 @@
       "Arthur Axel \"fREW\" Schmidt <frioux+cpan@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300003, CPAN::Meta::Converter version 2.112621",
+   "generated_by" : "Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640",
    "license" : [
       "perl_5"
    ],
@@ -22,6 +22,7 @@
       "runtime" : {
          "requires" : {
             "Catalyst" : "5.90006",
+            "Catalyst::Action::RenderView" : "0.16",
             "Catalyst::Controller::ActionRole" : "0.15",
             "Test::More" : "0.98",
             "Try::Tiny" : "0.11"
@@ -36,6 +37,6 @@
          "web" : "http://github.com/frioux/Catalyst-ActionRole-DetachOnDie"
       }
    },
-   "version" : "0.001000"
+   "version" : "0.001001"
 }
 
