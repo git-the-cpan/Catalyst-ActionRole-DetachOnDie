@@ -1,6 +1,6 @@
 package Catalyst::ActionRole::DetachOnDie;
 {
-  $Catalyst::ActionRole::DetachOnDie::VERSION = '0.001001';
+  $Catalyst::ActionRole::DetachOnDie::VERSION = '0.001002';
 }
 use Moose::Role;
 use Try::Tiny;
@@ -14,8 +14,8 @@ around execute => sub {
       $self->$orig($controller, $c, @args)
    } catch {
       $c->log->error("Caught exception: $_ detaching");
-      $c->detach;
       $c->error([ @{ $c->error }, $_ ]);
+      $c->detach;
       undef
    }
 };
@@ -34,7 +34,7 @@ Catalyst::ActionRole::DetachOnDie - If something dies in a chain, stop the chain
 
 =head1 VERSION
 
-version 0.001001
+version 0.001002
 
 =head1 SYNOPSIS
 

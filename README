@@ -3,7 +3,7 @@ NAME
     the chain
 
 VERSION
-    version 0.001001
+    version 0.001002
 
 SYNOPSIS
      package MyApp::Controller::Foo;
