@@ -1,5 +1,9 @@
 Revision history for Catalyst-ActionRole-DetachOnDie
 
+0.001003  2012-03-20 13:43:35 America/Chicago
+  - allow explicit $c->detach exceptions to pass through without
+    any action being taken (bphillips)
+
 0.001002  2012-03-06 14:25:48 CST6CDT
   - fix huge bug where $c->error wasn't set correctly (good catch xinming)
 

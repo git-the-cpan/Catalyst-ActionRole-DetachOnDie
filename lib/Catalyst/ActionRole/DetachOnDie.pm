@@ -1,9 +1,10 @@
 package Catalyst::ActionRole::DetachOnDie;
 {
-  $Catalyst::ActionRole::DetachOnDie::VERSION = '0.001002';
+  $Catalyst::ActionRole::DetachOnDie::VERSION = '0.001003';
 }
 use Moose::Role;
 use Try::Tiny;
+use Scalar::Util qw(blessed);
 
 # ABSTRACT: If something dies in a chain, stop the chain
 
@@ -13,6 +14,9 @@ around execute => sub {
    try {
       $self->$orig($controller, $c, @args)
    } catch {
+      if(blessed($_) && $_->isa('Catalyst::Exception::Detach')){
+        die $_; # re-throw explicit detach
+      }
       $c->log->error("Caught exception: $_ detaching");
       $c->error([ @{ $c->error }, $_ ]);
       $c->detach;
@@ -34,7 +38,7 @@ Catalyst::ActionRole::DetachOnDie - If something dies in a chain, stop the chain
 
 =head1 VERSION
 
-version 0.001002
+version 0.001003
 
 =head1 SYNOPSIS
 

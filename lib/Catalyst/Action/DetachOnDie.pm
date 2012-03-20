@@ -1,6 +1,6 @@
 package Catalyst::Action::DetachOnDie;
 {
-  $Catalyst::Action::DetachOnDie::VERSION = '0.001002';
+  $Catalyst::Action::DetachOnDie::VERSION = '0.001003';
 }
 
 use Moose;
@@ -24,7 +24,7 @@ Catalyst::Action::DetachOnDie - If something dies in a chain, stop the chain
 
 =head1 VERSION
 
-version 0.001002
+version 0.001003
 
 =head1 SYNOPSIS
 
