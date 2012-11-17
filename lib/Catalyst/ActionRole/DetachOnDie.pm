@@ -1,6 +1,6 @@
 package Catalyst::ActionRole::DetachOnDie;
 {
-  $Catalyst::ActionRole::DetachOnDie::VERSION = '0.001004';
+  $Catalyst::ActionRole::DetachOnDie::VERSION = '0.001005';
 }
 use Moose::Role;
 use Try::Tiny;
@@ -28,8 +28,8 @@ no Moose::Role;
 
 1;
 
-
 __END__
+
 =pod
 
 =head1 NAME
@@ -38,7 +38,7 @@ Catalyst::ActionRole::DetachOnDie - If something dies in a chain, stop the chain
 
 =head1 VERSION
 
-version 0.001004
+version 0.001005
 
 =head1 SYNOPSIS
 
@@ -90,4 +90,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
