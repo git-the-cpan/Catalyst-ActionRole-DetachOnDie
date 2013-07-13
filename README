@@ -1,9 +1,9 @@
 NAME
     Catalyst::ActionRole::DetachOnDie - If something dies in a chain, stop
-    the chain
+    the chain. DEPRECATED IN FAVOR OF CATALYST 5.90040
 
 VERSION
-    version 0.001005
+    version 0.001006
 
 SYNOPSIS
      package MyApp::Controller::Foo;
@@ -42,11 +42,15 @@ DESCRIPTION
     Catalyst::Action::DetachOnDie, which does the same thing but does not
     require the use of Catalyst::Controller::ActionRole.
 
+DEPRECATED
+    Instead of using this module you should use Catalyst 5.90040 and set the
+    "abort_chain_on_error_fix" flag.
+
 AUTHOR
     Arthur Axel "fREW" Schmidt <frioux+cpan@gmail.com>
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2012 by Arthur Axel "fREW" Schmidt.
+    This software is copyright (c) 2013 by Arthur Axel "fREW" Schmidt.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.
